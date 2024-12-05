@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import '../styles/globals.css'
+//dinamicko i asinkrono importanje komponente WalletConnectionProvider
+const WalletConnectionProvider = dynamic(() => import('../context/WalletConnectionProvider'), { ssr: false })
 
 
 function MyApp({ Component, pageProps }) {
@@ -9,7 +11,10 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Airbnb Clone</title>
             </Head>
-                <Component {...pageProps} />
+            <WalletConnectionProvider>
+            <Component {...pageProps} />
+            </WalletConnectionProvider>
+               
         </>
     )
 }

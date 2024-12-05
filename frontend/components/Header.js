@@ -41,11 +41,11 @@ function Header({ connected, publicKey, initializeUser , initialized, transactio
                     <GlobeAmericasIcon className="h-5 w-5 transition-all duration-300 text-gray-800" />
                 </div>
 
-                <div className="flex items-center bg-white text-gray-500 space-x-2 border rounded-full px-2 py-1 cursor-pointer shadow-sm hover:shadow-md transition">
+                {/*<div className="flex items-center bg-white text-gray-500 space-x-2 border rounded-full px-2 py-1 cursor-pointer shadow-sm hover:shadow-md transition">
                     <Bars3Icon className="h-5 w-5" />
 
                     <UserCircleIcon className="h-8 w-8" />
-                </div>
+                </div>*/}
             </div>
         </header>
     )
